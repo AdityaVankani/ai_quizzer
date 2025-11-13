@@ -1,6 +1,6 @@
 # 🧠 AI Quizzer - Adaptive Learning Platform
 
-**AI Quizzer** is a full-stack educational application that leverages **Generative AI (Google Gemini)** to create personalized, adaptive assessments. It features a **FastAPI backend** for robust logic and data management, and a **Streamlit frontend** for an interactive user experience.
+**AI Quizzer** is a full-stack educational application that leverages **Generative AI** to create personalized, adaptive assessments. It features a **FastAPI backend** for robust logic and data management, and a **Streamlit frontend** for an interactive user experience.
 
 
 
@@ -24,7 +24,7 @@
 - **Framework:** FastAPI
 - **Database:** SQLite (Local) / PostgreSQL (Production)
 - **ORM:** SQLAlchemy
-- **AI Model:** Google Gemini 1.5 Flash (`google-generativeai`)
+- **AI Model:** Google Gemini 2.0 Flash (`google-generativeai`)
 - **Authentication:** OAuth2 with JWT (`python-jose`, `passlib`)
 
 ### Frontend
@@ -41,7 +41,7 @@ Follow these steps to run **AI Quizzer** locally on your system.
 ### 🧩 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/yourusername/ai-quizzer.git](https://github.com/yourusername/ai-quizzer.git)
+git clone [https://github.com/AdityaVankani/ai_quizzer.git](https://github.com/AdityaVankani/ai_quizzer.git)
 cd ai-quizzer
 
 ## ⚙️ 2. Backend Setup
