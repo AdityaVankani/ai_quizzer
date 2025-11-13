@@ -10,6 +10,7 @@ BASE_URL = st.secrets.get("API_URL", "http://127.0.0.1:8000")
 # Custom CSS for full-page styling
 st.markdown("""
     <style>
+    /* General page styling */
     body {
         background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
         font-family: 'Poppins', sans-serif;
@@ -35,21 +36,34 @@ st.markdown("""
         border-radius: 10px;
         font-size: 1em;
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 60px auto;
         box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         text-align: center;
     }
-    .footer {
+    /* Centered footer styling */
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         bottom: 10px;
-        width: 100%;
+        left: 0;
+        right: 0;
         text-align: center;
+    }
+    .footer {
         font-size: 0.9em;
         color: #6c757d;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 8px 16px;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .footer a {
         color: #007bff;
         text-decoration: none;
+        font-weight: 500;
     }
     .footer a:hover {
         text-decoration: underline;
@@ -71,9 +85,11 @@ st.markdown("""
 
 # Footer
 st.markdown("""
-    <div class='footer'>
-        Made with ❤️ by <b>Adi</b> | 
-        <a href="https://github.com/adivankani" target="_blank">GitHub</a> • 
-        <a href="https://www.linkedin.com/in/aditya-vankani" target="_blank">LinkedIn</a>
+    <div class='footer-container'>
+        <div class='footer'>
+            Made with ❤️ by <b>Adi</b> | 
+            <a href="https://github.com/AdityaVankani" target="_blank">GitHub</a> • 
+            <a href="https://www.linkedin.com/in/adityavankani" target="_blank">LinkedIn</a>
+        </div>
     </div>
 """, unsafe_allow_html=True)
