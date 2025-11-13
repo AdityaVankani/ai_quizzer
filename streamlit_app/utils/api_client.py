@@ -1,15 +1,14 @@
 import requests
 import json
 
-import streamlit as st
-
 import os
+import streamlit as st
+from dotenv import load_dotenv
 
-if "API_URL" in st.secrets:
-    BASE_URL = st.secrets["API_URL"]
-else:
-    BASE_URL = "http://127.0.0.1:8000"
-# BASE_URL = "http://127.0.0.1:8000"  # FastAPI running locally
+load_dotenv()
+
+
+BASE_URL = os.getenv("API_URL") or "http://127.0.0.1:8000"  # FastAPI running locally
 
 def login(username, password):
     try:
