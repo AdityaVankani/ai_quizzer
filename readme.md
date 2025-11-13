@@ -2,7 +2,10 @@
 
 **AI Quizzer** is a full-stack educational application that leverages **Generative AI** to create personalized, adaptive assessments. It features a **FastAPI backend** for robust logic and data management, and a **Streamlit frontend** for an interactive user experience.
 
+---
+## Check your knowledge by taking test...[Demo]
 
+[https://aiquizzer.streamlit.app](https://aiquizzer.streamlit.app)
 
 ---
 
