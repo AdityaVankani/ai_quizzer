@@ -43,7 +43,7 @@ Follow these steps to run **AI Quizzer** locally on your system.
 ```bash
 git clone [https://github.com/AdityaVankani/ai_quizzer.git](https://github.com/AdityaVankani/ai_quizzer.git)
 cd ai-quizzer
-
+```
 ## ⚙️ 2. Backend Setup
 
 It is recommended to run the backend in a virtual environment.
@@ -61,7 +61,7 @@ source venv/bin/activate
 
 # Install requirements
 pip install -r requirements.txt
-
+```
 ### B. Configuration (.env)
 
 Create a file named `.env` in the root directory and add the following:
@@ -77,7 +77,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 
 ```bash
 uvicorn app.main:app --reload
-
+```
 
 Once started, the FastAPI backend will be available at: 👉 http://127.0.0.1:8000
 
@@ -92,7 +92,7 @@ Open a **new terminal** (keep the backend running).
 # Ensure dependencies are installed
 pip install -r requirements.txt
 streamlit run streamlit_app/Home.py
-
+```
 Once started, the Streamlit frontend will open automatically in your browser at:
 👉 http://localhost:8501￼
 
