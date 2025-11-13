@@ -9,6 +9,11 @@ import streamlit as st
 # ------------------------------
 # FastAPI initialization
 # ------------------------------
+
+origins = [
+    "https://aiquizzer.streamlit.app",   # your deployed Streamlit app
+    "http://localhost:8501",             # for local testing
+]
 app = FastAPI(
     title="AI Quiz Microservice",
     description="Backend for AI-powered quiz with JWT authentication, Gemini-based AI scoring, and adaptive difficulty engine.",
