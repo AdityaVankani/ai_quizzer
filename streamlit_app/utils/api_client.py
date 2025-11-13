@@ -11,7 +11,7 @@ load_dotenv()
 # BASE_URL =  os.getenv("API_URL", "http://127.0.0.1:8000")  # FastAPI running locally
 BASE_URL = st.secrets.get("API_URL", "http://127.0.0.1:8000")
 #hello
-
+st.write("Using API:", BASE_URL)
 def login(username, password):
     try:
         res = requests.post(f"{BASE_URL}/auth/login", json={"username": username, "password": password})
