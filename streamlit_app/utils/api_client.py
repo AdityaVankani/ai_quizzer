@@ -8,7 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-BASE_URL =  os.getenv("API_URL", "http://127.0.0.1:8000")  # FastAPI running locally
+# BASE_URL =  os.getenv("API_URL", "http://127.0.0.1:8000")  # FastAPI running locally
+BASE_URL = st.secrets.get("API_URL", "http://127.0.0.1:8000")
 
 def login(username, password):
     try:
