@@ -66,13 +66,13 @@ pip install -r requirements.txt
 
 Create a file named `.env` in the root directory and add the following:
 
-```ini
+```bash
 DATABASE_URL=sqlite:///./ai_quiz_app.db
 GEMINI_API_KEY=your_google_gemini_api_key_here
 SECRET_KEY=your_random_secret_string_for_jwt
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
-
+```
 ### C. Run the Backend
 
 ```bash
@@ -89,7 +89,7 @@ Open a **new terminal** (keep the backend running).
 
 ### 🧰 Install Dependencies
 ```bash
-# Ensure dependencies are installed
+
 pip install -r requirements.txt
 streamlit run streamlit_app/Home.py
 ```
