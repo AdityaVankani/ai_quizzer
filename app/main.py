@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.auth.routes import router as auth_router
 from app.quiz.routes import router as quiz_router
 from app.database import create_tables
-
+import streamlit as st
 # ------------------------------
 # FastAPI initialization
 # ------------------------------
@@ -14,7 +14,10 @@ app = FastAPI(
     description="Backend for AI-powered quiz with JWT authentication, Gemini-based AI scoring, and adaptive difficulty engine.",
     version="1.0.0"
 )
-
+if "API_URL" in st.secrets:
+    BASE_URL = st.secrets["API_URL"]
+else:
+    BASE_URL = "http://127.0.0.1:8000"
 # ------------------------------
 # Middleware (CORS for frontend or testing tools)
 # ------------------------------
@@ -46,4 +49,4 @@ def root():
 def on_startup():
     create_tables()
     print("✅ Database tables verified or created successfully.")
-    print("🚀 AI Quiz Microservice is ready at: http://127.0.0.1:8000")
+    print("🚀 AI Quiz Microservice is ready at: {BASE_URL}")
