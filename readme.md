@@ -67,11 +67,10 @@ pip install -r requirements.txt
 Create a file named `.env` in the root directory and add the following:
 
 ```bash
-DATABASE_URL=sqlite:///./ai_quiz_app.db
+
 GEMINI_API_KEY=your_google_gemini_api_key_here
-SECRET_KEY=your_random_secret_string_for_jwt
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
+JWT_SECRET=your_random_secret_string_for_jwt
+
 ```
 ### C. Run the Backend
 
