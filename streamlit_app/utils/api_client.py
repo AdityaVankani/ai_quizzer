@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-BASE_URL = os.getenv("API_URL") or "http://127.0.0.1:8000"  # FastAPI running locally
+BASE_URL =  os.getenv("API_URL") or "http://127.0.0.1:8000"  # FastAPI running locally
 
 def login(username, password):
     try:
