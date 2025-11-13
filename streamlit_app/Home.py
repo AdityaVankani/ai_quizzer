@@ -52,3 +52,5 @@ st.markdown("""
         It will automatically create your account if it doesn’t exist yet.
     </div>
 """, unsafe_allow_html=True)
+
+st.markdown('<p class="footer">Developed by Aditya Vankani • © 2025 AI Quizzer</p>', unsafe_allow_html=True)
